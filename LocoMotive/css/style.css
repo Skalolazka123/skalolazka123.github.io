@@ -1050,7 +1050,7 @@ button.navbar-toggler:focus {
 
 @media (max-width: 576px) {
     html {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .navbar {
