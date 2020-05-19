@@ -24,9 +24,12 @@ object {
     width: 0;
     height: 0;
 }
-.btn.focus, .btn:focus {
-  box-shadow: 0 0 0 0.2rem var(--main-color);
+
+.btn.focus,
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem var(--main-color);
 }
+
 :focus {
     outline: var(--main-color) auto 1px;
 }
@@ -238,7 +241,34 @@ section .row h2 {
     font-size: 30px;
     font-weight: bold;
 
+
 }
+
+footer .row h2 span,
+section .row h2 span {
+    position: relative;
+}
+
+footer .row h2 span:after,
+footer .row h2 span:before,
+section .row h2 span:after,
+section .row h2 span:before {
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    position: absolute;
+    left: -5rem;
+    top: 50%;
+    height: 8px;
+    width: 3rem;
+    content: "";
+}
+
+footer .row h2 span:after,
+section .row h2 span:after {
+    left: auto;
+    right: -5rem;
+}
+
 
 footer .row p,
 section .row p {
@@ -299,7 +329,8 @@ section .row p {
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
-.services .card:hover p, .services .card:hover .services__icon {
+.services .card:hover p,
+.services .card:hover .services__icon {
     color: #fff;
     fill: #fff;
 }
@@ -896,9 +927,10 @@ input[type="email"]:focus {
         display: none;
     }
 
-button.navbar-toggler:focus {
-      outline: 5px auto var(--main-color);
-}
+    button.navbar-toggler:focus {
+        outline: 5px auto var(--main-color);
+    }
+
     .header {
         padding-top: 12rem;
         background-position: 30% center;
@@ -919,7 +951,7 @@ button.navbar-toggler:focus {
         font-size: 1.2rem;
         width: 40%;
         min-width: 250px;
-            margin: 0.2rem auto;
+        margin: 0.2rem auto;
 
     }
 
@@ -933,6 +965,7 @@ button.navbar-toggler:focus {
         margin-top: 2rem;
         font-size: 2rem;
     }
+
     footer .row p,
     section .row p {
         font-size: 1rem;
@@ -1023,18 +1056,21 @@ button.navbar-toggler:focus {
         border-bottom: 1px solid #a5a5a5;
         margin-top: 1rem;
     }
+
     .blog-item__desc h4 {
-      font-size: 1.2rem;
-    }
-    .blog-item__desc span {
-      font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
-.blog-item__desc .desc__text {
-  width: 100%;
-}
+    .blog-item__desc span {
+        font-size: 0.8rem;
+    }
+
+    .blog-item__desc .desc__text {
+        width: 100%;
+    }
+
     .blog-item__desc .desc__text p {
-      text-align: justify;
+        text-align: justify;
 
     }
 
@@ -1048,8 +1084,8 @@ button.navbar-toggler:focus {
         height: 4rem;
     }
 
-    .circle-bg i{
-      font-size: 2rem;
+    .circle-bg i {
+        font-size: 2rem;
     }
 
     .contact__item p {
@@ -1058,20 +1094,23 @@ button.navbar-toggler:focus {
         font-size: 0.9rem !important;
 
     }
-    .form-row input, textarea#inputMessage {
-          margin-top: 0.3rem;
-    font-size: 1rem;
-    padding: 1.3rem 0.8rem;
+
+    .form-row input,
+    textarea#inputMessage {
+        margin-top: 0.3rem;
+        font-size: 1rem;
+        padding: 1.3rem 0.8rem;
     }
 
     form button[type="submit"] {
-           margin-top: 1.5rem;
-           padding: 1rem 0;
+        margin-top: 1.5rem;
+        padding: 1rem 0;
     }
-    .form-control::-webkit-input-placeholder {
-    font-size: 1rem;
 
-}
+    .form-control::-webkit-input-placeholder {
+        font-size: 1rem;
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -1085,7 +1124,8 @@ button.navbar-toggler:focus {
     html {
         font-size: 16px;
     }
-        footer .row,
+
+    footer .row,
     section .row {
         padding-top: 2rem;
     }
@@ -1096,19 +1136,33 @@ button.navbar-toggler:focus {
         font-size: 1.7rem;
     }
 
-footer .container, section .container {
-    padding-bottom: 2rem;
-}
+    footer .container,
+    section .container {
+        padding-bottom: 2rem;
+    }
+
+    section .row h2.team__title span:after,
+    section .row h2.team__title span:before {
+        left: -20px;
+        width: 1rem;
+    }
+
+    section .row h2.team__title span:after {
+        left: auto;
+        right: -20px;
+    }
 
     .navbar {
         padding: 0.2rem 0.1rem;
     }
+
     .button {
-          padding: 0.6rem 0.8rem;
+        padding: 0.6rem 0.8rem;
+        min-width: 170px;
     }
 
     .header__title {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
 
     .menu__item {
@@ -1147,13 +1201,21 @@ footer .container, section .container {
     .fa-2x {
         font-size: 1.6em;
     }
+
     .blog-item__desc {
-      margin-top: 1rem;
+        margin-top: 1rem;
     }
 
-.contact {
-    margin-bottom: 1rem;
-}
+    .blog .row .row {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0.6rem 0 0;
+
+    }
+
+    .contact {
+        margin-bottom: 1rem;
+    }
 
 
     .contact__item {
@@ -1161,39 +1223,56 @@ footer .container, section .container {
     }
 
     .contact__item p {
-    margin-left: 0.8rem !important;
-    text-align: start;
+        margin-left: 0.8rem !important;
+        text-align: start;
     }
-form button[type="submit"] {
-    margin-right: 15px;
-    margin-left: 15px;
 
-}
+    form button[type="submit"] {
+        margin-right: 15px;
+        margin-left: 15px;
+
+    }
+
 }
 
 @media (max-width: 320px) {
-        .header {
-            padding-top: 6rem;
-        }
+    .header {
+        padding-top: 6rem;
+    }
 
-        header, footer, section, .container, .row {
-          min-width: 220px;
-        }
+    header,
+    footer,
+    section,
+    .container,
+    .row {
+        min-width: 220px;
+    }
 
-        .button, .portfolio__buttons button {
-            min-width: 170px;
-        }
-        .blog .row .row {
-          padding-right: 0;
-        padding-left: 0;
-        margin: 0;
 
-        }
-        .contact__item {
+    footer .row h2 span:after,
+    footer .row h2 span:before,
+    section .row h2 span:after,
+    section .row h2 span:before {
+        left: -20px;
+        width: 1rem;
+        top: 50%;
+        content: "";
+    }
+
+    footer .row h2 span:after,
+    section .row h2 span:after {
+        left: auto;
+        right: -20px;
+    }
+
+
+
+    .contact__item {
         display: block;
     }
+
     .contact__item p {
-    margin-left: 0 !important;
-    text-align: center;
+        margin-left: 0 !important;
+        text-align: center;
     }
-    }
+}
