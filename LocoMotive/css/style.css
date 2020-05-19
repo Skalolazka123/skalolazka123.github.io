@@ -4,7 +4,7 @@
     --main-color: #FFBC03;
     --btn-color: #cca108;
     --second-main-color: #07a7b5;
-    --grey-bg-color: #edfdff;
+    --grey-bg-color: #f7f7f7;
 }
 
 body {
@@ -115,7 +115,7 @@ object {
 }
 
 .menu__item i {
-    vertical-align: text-bottom;
+    vertical-align: center;
 }
 
 .menu__item a:hover,
@@ -124,6 +124,7 @@ object {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 /*-----------------MENU END---------------*/
 
@@ -287,6 +288,7 @@ section .row p {
     padding: 60px 40px 50px;
     transition: background-color 0.3s;
     transition: box-shadow 0.5s;
+    background-color: var(--grey-bg-color);
 }
 
 .services .card:hover {
@@ -297,8 +299,9 @@ section .row p {
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
-.services .card:hover p {
+.services .card:hover p, .services .card:hover .services__icon {
     color: #fff;
+    fill: #fff;
 }
 
 .services .card-body {
@@ -314,7 +317,9 @@ section .row p {
 .services__icon {
     width: 60px;
     height: 60px;
+    fill: var(--main-color);
 }
+
 
 .services .card-text {
     margin-top: 0;
@@ -914,6 +919,7 @@ button.navbar-toggler:focus {
         font-size: 1.2rem;
         width: 40%;
         min-width: 250px;
+            margin: 0.2rem auto;
 
     }
 
@@ -927,7 +933,6 @@ button.navbar-toggler:focus {
         margin-top: 2rem;
         font-size: 2rem;
     }
-
     footer .row p,
     section .row p {
         font-size: 1rem;
@@ -1018,6 +1023,20 @@ button.navbar-toggler:focus {
         border-bottom: 1px solid #a5a5a5;
         margin-top: 1rem;
     }
+    .blog-item__desc h4 {
+      font-size: 1.2rem;
+    }
+    .blog-item__desc span {
+      font-size: 0.8rem;
+    }
+
+.blog-item__desc .desc__text {
+  width: 100%;
+}
+    .blog-item__desc .desc__text p {
+      text-align: justify;
+
+    }
 
     .contact__item {
         display: inline-flex;
@@ -1039,6 +1058,20 @@ button.navbar-toggler:focus {
         font-size: 0.9rem !important;
 
     }
+    .form-row input, textarea#inputMessage {
+          margin-top: 0.3rem;
+    font-size: 1rem;
+    padding: 1.3rem 0.8rem;
+    }
+
+    form button[type="submit"] {
+           margin-top: 1.5rem;
+           padding: 1rem 0;
+    }
+    .form-control::-webkit-input-placeholder {
+    font-size: 1rem;
+
+}
 }
 
 @media (max-width: 768px) {
@@ -1050,15 +1083,34 @@ button.navbar-toggler:focus {
 
 @media (max-width: 576px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
+        footer .row,
+    section .row {
+        padding-top: 2rem;
+    }
+
+    footer .row h2,
+    section .row h2 {
+        margin-top: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+footer .container, section .container {
+    padding-bottom: 2rem;
+}
 
     .navbar {
         padding: 0.2rem 0.1rem;
     }
-    .header__title {
-        font-size: 1.8rem;
+    .button {
+          padding: 0.6rem 0.8rem;
     }
+
+    .header__title {
+      font-size: 1.8rem;
+    }
+
     .menu__item {
         text-align: right;
 
@@ -1095,15 +1147,47 @@ button.navbar-toggler:focus {
     .fa-2x {
         font-size: 1.6em;
     }
+    .blog-item__desc {
+      margin-top: 1rem;
+    }
+
+.contact {
+    margin-bottom: 1rem;
+}
+
 
     .contact__item {
-        display: block;
+        display: inline-flex;
     }
 
     .contact__item p {
-    margin: 0 !important;
+    margin-left: 0.8rem !important;
+    text-align: start;
     }
-
-
+form button[type="submit"] {
+    margin-right: 15px;
+    margin-left: 15px;
 
 }
+}
+
+@media (max-width: 320px) {
+        .header {
+            padding-top: 6rem;
+        }
+
+        header, footer, section, .container, .row {
+          min-width: 220px;
+        }
+
+        .button, .portfolio__buttons button {
+            min-width: 170px;
+        }
+        .contact__item {
+        display: block;
+    }
+    .contact__item p {
+    margin-left: 0 !important;
+    text-align: center;
+    }
+    }
