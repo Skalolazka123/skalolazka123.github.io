@@ -1183,6 +1183,12 @@ form button[type="submit"] {
         .button, .portfolio__buttons button {
             min-width: 170px;
         }
+        .blog .row .row {
+          padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+
+        }
         .contact__item {
         display: block;
     }
