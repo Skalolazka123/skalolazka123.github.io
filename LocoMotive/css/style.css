@@ -211,7 +211,7 @@ object {
 
 /*-----------------ABOUT US---------------*/
 
-section:nth-child(2n+1) {
+section:nth-child(even) {
     /*gray
   background-color: #f0f1f1;
   */
