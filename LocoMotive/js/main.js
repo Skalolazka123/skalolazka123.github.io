@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     //Button filter in portfolio block
     $('.button[filter]').click(function() {
 
@@ -24,13 +25,15 @@ $(document).ready(function() {
         //Filtretion. Show pictures with apropriate filter and val on for apropriate button
         if (filterVal == 'all') {
 
-            $('.filter > div').show('slow', function() {
+            $('.filter > div').show('fast', function() {
                 //delete filter fix hight
                 $('.row.filter').height('auto');
             });
+
             $('.filter > .button[filter="all"]').attr('val', 'on');
 
         } else {
+
             $('.filter > div[filter="' + filterVal + '"]').show('slow');
             $('.button[filter="' + filterVal + '"]').attr('val', 'on');
         }
@@ -39,8 +42,8 @@ $(document).ready(function() {
 
     //Slick slider setting
     $('.multiple-items').slick({
-        autoplay: false,
-        infinite: false,
+        autoplay: true,
+        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: true,
