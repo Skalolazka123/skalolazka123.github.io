@@ -1,0 +1,27 @@
+
+.header__logo {
+    width: 112px;
+    height: 77px;
+    background: url(https://odesseo.com.ua/wp-content/themes/odesseo/images/logo-1240.png) no-repeat;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+table caption{
+  caption-side: top;
+}
+
+.main-content__table .table__head th {
+    vertical-align: top;
+    text-align: center;
+}
+
+.main-content__table-control {
+    margin-top: 1rem;
+}
