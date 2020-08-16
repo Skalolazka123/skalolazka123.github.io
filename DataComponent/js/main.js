@@ -128,7 +128,7 @@ $(document).ready(function() {
 
     //function gets JSON from api
     function takeJSON(skipCount, limitCount, orderBy, orderType) {
-        $.getJSON('http://api.odesseo.com.ua/warehouses', { skip: skipCount, limit: limitCount, order_by: orderBy, order: orderType }, function(data) {
+        $.getJSON('https://api.odesseo.com.ua/warehouses', { skip: skipCount, limit: limitCount, order_by: orderBy, order: orderType }, function(data) {
 
                 //clear the table
                 $('.table__body').empty();
