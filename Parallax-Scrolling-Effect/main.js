@@ -24,7 +24,12 @@ $(window).scroll(function(event) {
     parallax.each(function(index, el) {
         let speed = $(this).data('speed');
         //движение слоев с разной скоростью, кот задается в data-speed эл-та +
-        $(this).css('transform', 'translateY(' + (scr * speed) +'px)');
+        if (speed > 0) {
+            $(this).css('transform', 'translateY(' + (scr * speed) +'px)');
+        } else {
+            $(this).css('transform', 'translateY(' + (scr * speed + scr) +'px)');
+        }
+        
     });
 
     //opacity для h1 (кот посередине header) плавно меняется от 1 до 0 (при скролл на header_height / 2)
