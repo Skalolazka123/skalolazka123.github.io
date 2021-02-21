@@ -35,7 +35,7 @@ header:after {
     z-index: 25;
 }
 
-header > img {
+header > img:not(.sky) {
     position: absolute;
     transform: none;
     transition: transform 0.1s ease-out;
@@ -70,6 +70,7 @@ header > img {
 }
 
 .sky {
+    position: absolute;
     width: 100%;
     top: 0;
     right: 0;
@@ -104,20 +105,20 @@ nav .container {
 }
 
 .hamburger-menu {
-    width: 1.55rem;
+    width: 2rem;
     height: 1.5rem;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 3px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .bar {
     position: relative;
     width: 1.2rem;
-    height: 3px;
+    height: 2px;
     background-color: #fff;
     border-radius: 2px;
 }
@@ -126,19 +127,19 @@ nav .container {
 .bar:after {
     content: "";
     position: absolute;
-    width: 1.55rem;
-    height: 3px;
+    width: 1.2rem;
+    height: 2px;
     right: 0;
     background-color: #fff;
     border-radius: 2px;
 }
 
 .bar:before {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 }
 
 .bar:after {
-    transform: translateY(8px);
+    transform: translateY(6px);
 }
 
 

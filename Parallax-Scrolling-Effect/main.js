@@ -29,7 +29,7 @@ $(window).scroll(function(event) {
         } else {
             $(this).css('transform', 'translateY(' + (scr * speed + scr) +'px)');
         }
-        
+
     });
 
     //opacity для h1 (кот посередине header) плавно меняется от 1 до 0 (при скролл на header_height / 2)
